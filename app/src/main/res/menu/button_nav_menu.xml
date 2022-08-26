@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/stories"
+        android:title="Stories"
+        android:icon="@drawable/ic_baseline_local_fire_department_24"/>
+    <item
+        android:id="@+id/space_travel"
+        android:title="Space Travel"
+        android:icon="@drawable/ic_baseline_launch_24"
+        />
+    <item
+        android:id="@+id/experiments"
+        android:title="Experiments"
+        android:icon="@drawable/ic_baseline_menu_book_24" />
+    <item
+        android:id="@+id/bookmarks"
+        android:title="Bookmarks"
+        android:icon="@drawable/ic_baseline_star_border_24"/>
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_24"/>
+</menu>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxy">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/mercury"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mercury" />
+
+            <ImageView
+                android:id="@+id/venus"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/venus" />
+
+            <ImageView
+                android:id="@+id/earth"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/earth" />
+
+            <ImageView
+                android:id="@+id/mars"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/mars" />
+
+            <ImageView
+                android:id="@+id/jupiter"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/jupiter" />
+            <ImageView
+                android:id="@+id/saturn"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/saturn" />
+            <ImageView
+                android:id="@+id/uranus"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/uranus" />
+            <ImageView
+                android:id="@+id/neptune"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/neptune" />
+            <ImageView
+                android:id="@+id/pluto"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/pluto" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/meteor_explosion"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/meteor_explosion" />
+
+            <ImageView
+                android:id="@+id/asteroid"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/asteroid" />
+
+            <ImageView
+                android:id="@+id/black_hole"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/black_hole" />
+
+            <ImageView
+                android:id="@+id/hjakutake"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/hjakutake" />
+
+            <ImageView
+                android:id="@+id/solar_eclipse"
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/solar_eclipse" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="259dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/search_bar"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingStart="20dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="58dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="57dp"
+        android:src="@drawable/ic_baseline_home_24"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toStartOf="@+id/search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <HorizontalScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="300dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="410dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#c1c1c1"-->
+<!--                android:src="@drawable/earth" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:background="#c1c1c1"-->
+<!--                android:src="@drawable/saturn" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:background="#c1c1c1"-->
+<!--                android:src="@drawable/jupiter" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:background="#c1c1c1"-->
+<!--                android:src="@drawable/mercury" />-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:background="#c1c1c1"-->
+<!--                android:src="@drawable/neptune" />-->
+<!--        </LinearLayout>-->
+<!--    </HorizontalScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
